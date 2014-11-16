@@ -1,0 +1,18 @@
+.container#event  
+  %h1.center Upcoming Events
+  %section
+    .table-responsive
+      %table.table.table-striped
+        %tr
+          %th Event
+          %th Date
+          %th Time
+          %th Description
+          %th Drink Specials
+        - @events.each do |event|
+          %tr
+            %td= event.title
+            %td= event.date
+            %td= event.time
+            %td= event.description
+            %td= event.specials

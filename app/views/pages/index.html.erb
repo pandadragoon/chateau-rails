@@ -1,0 +1,54 @@
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  });
+</script>
+<section>
+		<div class="jumbotron">
+			<div class="carousel" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+              <%= image_tag("banner1.jpg", alt: "First slide image", class: "center-block") %>
+						</div>
+						<div class="item">
+              <%= image_tag("banner2.jpg", alt: "Second slide image", class: "center-block") %>
+						</div>
+						<div class="item">
+              <%= image_tag("banner3.jpg", alt: "Third slide image", class: "center-block") %>
+						</div>
+						<div class="item">
+              <%= image_tag("banner4.jpg", alt: "Fourth slide image", class: "center-block") %>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<section>
+			<div class="row info">
+				<div class="col-sm-3">
+					<h2 class="fancy center">Hours</h2>
+						<ul>
+							<li>Wednesday – 9PM – 2AM</li>
+							<li>Friday – Event by Booking</li>
+							<li>Saturday –Event by Booking</li>
+						</ul>
+				</div>
+				<div class="col-sm-6">
+					<h2 class="fancy center">Info</h2>
+					<div id="container">
+						<p class="center">Lawrence's hottest dance club! Join us on Wednesdays for Pride Night, Fridays for Retro Night, and Saturdays for dance parties! 9pm to 2am. Always 18 and up!</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<h2 class="fancy center">Specials</h2>
+					<ul>
+						<li>$4 Double Wells</li>
+						<li>$2 Shot of the Week</li>
+						<li>$3 Sangria</li>
+					</ul>
+				</div>
+			</div>
+		</section>

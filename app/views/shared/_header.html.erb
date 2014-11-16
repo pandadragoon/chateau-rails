@@ -1,0 +1,42 @@
+<%= render 'shared/contact_modal' %>
+<header>
+  <div class="container">
+		<div id="branding" class="clearfix">
+		<a id="logo" href=<%= root_path %>>
+      <%= image_tag("chateau-logo.jpg", class: "img-responsive pull-left") %>
+			<h1 class="fancy">Wilde's Chateau <span id="emp">24</span></h1>
+		</a>
+		<div id="social_media">
+			<ul>
+				<li><a href="https://www.facebook.com/Chateau24" class="icon-facebook" id="facebook"></a></li>
+				<li><a href="https://plus.google.com/115184087779748309954/about?gl=us&hl=en" class="icon-googleplus" id="googleplus"></a></li>
+				<li><a href="https://twitter.com/Chateau24" class="icon-twitter" id="twitter"></a></li>
+				<li><a href="http://www.yelp.com/biz/wildes-chateau-24-lawrence" class="icon-yelp" id="yelp"></a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- Static navbar -->
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Events", events_path %></li>
+          <li><%= link_to "Photos", "#" %></li>
+					<li><%= link_to "About", about_path %></li>
+          <li><a data-toggle="modal" href="#contactModal" class="contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </div>
+
+</header>
