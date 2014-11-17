@@ -8,5 +8,6 @@ Bundler.require(*Rails.groups)
 
 module ChateauRails
   class Application < Rails::Application
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
   end
 end
