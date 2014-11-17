@@ -26,11 +26,11 @@ $darkHighlight: #3D3D3D;
 
 @font-face {
 	font-family: 'icomoon';
-	src:font-url(asset-path('icomoon.eot?naxqdm'));
-	src:font-url(asset-path('icomoon.eot?#iefixnaxqdm')) format('embedded-opentype'),
-		url(asset-path('icomoon.woff?naxqdm')) format('woff'),
-		url(asset-path('icomoon.ttf?naxqdm')) format('truetype'),
-		url(asset-path('icomoon.svg?naxqdm#icomoon')) format('svg');
+	src:asset-url('icomoon.eot?naxqdm');
+	src:asset-url('icomoon.eot?#iefixnaxqdm') format('embedded-opentype'),
+		asset-url('icomoon.woff?naxqdm') format('woff'),
+		asset-url('icomoon.ttf?naxqdm') format('truetype'),
+		asset-url('icomoon.svg?naxqdm#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
