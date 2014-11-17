@@ -1,0 +1,10 @@
+.container
+  %section
+    %h1.center#photo_head Photos
+  - @photo_albums.each do |album|
+    %section.album.clearfix
+      %h2= album.title
+      %ul
+        - album.photos.each do |photo|
+          %li
+            = image_tag(photo.img_url, alt: photo.alt)
